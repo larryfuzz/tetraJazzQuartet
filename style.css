@@ -1,0 +1,297 @@
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// GENERAL //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+*{
+    font-family: 'roboto_light', Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    font-size: 105%; 
+}
+@font-face{
+    font-family: "roboto_regular";
+    src: url(font/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+@font-face{
+    font-family: "roboto_light";
+    src: url(font/Roboto_Condensed/RobotoCondensed-Light.ttf);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    
+}
+section {
+    box-sizing: border-box;
+  }
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// MAIN //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+main {
+
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// HEADER //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#background_image{
+    
+    background-image: url(images/tetra_up-min.png);
+    background-size: cover;
+    opacity: 0.7;
+    background-position: 50% 50%;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    
+}
+header{
+ background-color: black;
+}
+
+h1{
+    margin: 0%;
+    color: #ffffff;
+    width: 50%;
+    opacity: none;
+    margin: auto;
+    padding: 3%;
+    border: solid;
+    text-align: center;
+    font-size: 500%;
+    
+    
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// SECTION //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#resume{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid ;  
+}
+#qui_sommes_nous{
+    text-align: center;
+    margin-bottom: 25%;
+
+}
+#article_1{
+    width: 45%;
+}
+/*//////////////////////////////////////////transition 1/////////////////////////////////////////////////////////*/
+
+#tetra_sun{
+    background-image: url(images/tetra_soleil-min.png) ;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/*//////////////////////////////////////////transition 2/////////////////////////////////////////////////////////*/
+
+#plante_verte{
+    background-image: url(images/tetra_accueil.jpg) ;
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 35vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7;
+}
+#conteneurPlanteVerte{
+    background-color: black;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// video //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#video{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    padding: 5%;
+}
+
+
+#teaser{
+    margin-bottom: 3%;
+}
+/*
+#teaser, #fullHouse {
+    width: 50%;
+}
+*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// ils nous on fait confiance //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#confiance{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+#confiance img{
+ width:  125px;
+ height: 125px;
+}
+
+#references h2{
+    border: 1px solid;
+    text-align: center;
+    padding: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// ils nous on fait confiance //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+#social{
+    display: flex;
+    justify-content: space-around;
+}
+
+#social img{
+    width: 60%;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// ils nous on fait confiance //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section {
+   
+    width: 50%;
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// MEDIE QUERIES //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 800px) {
+    h1{
+        font-size: 400%;
+    }
+    #resume{
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        align-items: center;
+        border: 1px solid ;
+        margin-left: none;
+        margin-right: none;
+        
+    }
+
+    #qui_sommes_nous{
+        text-align: center;
+        margin-bottom: 10%;
+
+    }
+    #lecteur{
+        width: 70%;
+        height: 350px;
+    }
+    #article_1{
+        width: 80%;
+        margin-bottom: 10%;
+
+    }
+
+    #teaser, #fullHouse {
+        width: 614.4px;
+    }
+    #social{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #social img{
+        width: 60%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 650px){
+    h1{
+        font-size: 300%;
+    }
+
+    #teaser, #fullHouse {
+        width: 426px;
+        height: 240px ;
+    }
+    #confiance img{
+        width:  80px;
+        height: 80px;
+       }
+
+}
+@media screen and (max-width: 479px){
+    h1{
+        font-size: 200%;
+    }
+    h2, p{
+        font-size: 80%;
+    }
+   
+    #teaser, #fullHouse {
+        width: 340.8px;
+        height: 192px ;
+    }
+    #confiance img{
+        width:  80px;
+        height: 80px;
+       }
+       #plante_verte{
+       
+        min-height: 20vh;
+      
+    }
+    #tetra_sun{
+       
+        min-height: 30vh;
+      
+    }
+    #lecteur{
+        width: 70%;
+        height: 200px;
+    }
+
+}
